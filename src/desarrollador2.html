@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Sucesión de Fibonacci </title>
+  <link rel="stylesheet" href="../css/button.css">
+  <meta charset = "UTF-8">
+  <title>Desarrollador 2</title>
+</head>
+<body>
+    <DIV ALIGN=center>
+        <h1>CoderGeeks</h1>
+    </DIV>
+    <center>
+    <h1> Sucesión de Fibonacci </h1>
+    <p>La sucesión de Fibonacci es una sucesión definida por recurrencia. Esto significa que para calcular un término de la sucesión se necesitan los términos que le preceden.</p>
+    <h2> Ejemplo: </h2>
+    <p>
+        Se proporcionan los dos primeros términos: 
+        a0 = 0 y a1 = 1
+        Los siguientes se calculan con la siguiente fórmula:
+        an+1 = an - 1  + an, n >= 1
+    </p>
+    <img src="https://okdiario.com/img/2017/06/07/secuencia-de-fibonacci-2-990x556.jpg">
+    
+    <form>
+        Ingrese un valor entero positivo hasta donde quiere que llegue la sucesión de Fibonacci:
+        <input type = "number" id = "numero">
+        <br>
+        <input type = "button" value = "Calcular" onClick = "secuencia()">
+    </form>
+    </center>
+    <!-- <a href="index.html">Ir al inicio</a> -->
+    <div class="button-return">
+        <button class="cta"  onclick="retornar()" type="button">
+          <span class="hover-underline-animation" > Return </span>
+          <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+              <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+          </svg>
+      </button>
+      </div>
+
+    <script>
+        function secuencia()
+        {
+            let valor = document.getElementById('numero').value;
+            let a0 = 0;
+            let a1 = 1;
+            let suma;
+            var lista = [];
+            if(valor == 0)
+            {
+                alert('Ingrese un valor mayor a 0');
+                return false;
+            }
+            else
+            {
+                for(let i = 1; i <= valor; i++)
+                {
+                    lista.push(a1);
+                    suma = a0 + a1;
+                    a0 = a1;
+                    a1 = suma;
+                }
+                alerta = alert(lista);
+            }
+        }
+
+        function retornar()
+        {
+            window.location.href = "../index.html";
+        }
+    </script>
+
+</body>
+</html>

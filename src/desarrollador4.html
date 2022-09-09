@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/button.css">
+    <title>Desarrollador 4</title>
+</head>
+<body>
+    <script type="text/javascript">
+        lado =prompt('Ingrese un lado del cuadrado','');
+        perimetro = lado*4;
+        alert("El perimetro del cuadrado es: " + perimetro);
+
+        function retornar(){
+            window.location.href = "../index.html";
+        }
+    </script>
+    <DIV ALIGN=center>
+        <h1>CoderGeeks</h1>
+        <!-- <a href="../index.html">Ir al inicio</a> -->
+        <div class="button-return">
+            <button class="cta"  onclick="retornar()" type="button">
+              <span class="hover-underline-animation" > Return </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                  <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+              </svg>
+          </button>
+          </div>
+    </DIV>
+</body>
+</html>

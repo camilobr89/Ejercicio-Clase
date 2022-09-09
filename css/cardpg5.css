@@ -1,6 +1,17 @@
 /* From uiverse.io by @alexreyes091 */
+h3 {
+    text-align: center;
+}
+
+.box-card{
+    display: flex;
+    justify-content: center;
+    position: relative;
+     
+}
+
 .card {
-    width: 190px;
+    width: 380px;
     height: 254px;
     padding: 2%;
     background: rgb(255, 255, 255);
@@ -52,10 +63,10 @@
    
    button:hover {
     color: white;
-    background-color: rgb(238, 103, 238);
     border: 1px solid white;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
    }
-   
+
+
    
    

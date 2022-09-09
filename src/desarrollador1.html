@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Desarrollador 1</title>
+<link rel="stylesheet" href="../css/pg1.css">
+
+</head>
+<body>
+    
+   
+        
+    <h1>Calculo operaciones basicas:</h1>
+
+    <div class="button-return">
+        <button class="cta"  onclick="retornar()" type="button">
+            <span class="hover-underline-animation" > Return </span>
+            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+            </svg>
+        </button>
+    </div>
+
+   
+    
+
+
+    <script> 
+
+    function calcular(){
+    let n1 = prompt("Dijite su primer numero");
+    let n2 = prompt("Dijite su segundo numero");
+    var num1 = parseInt(n1);
+    var num2 = parseInt(n2);
+
+    function suma(){
+        vsuma = num1+num2;
+        alert("Sumado da:" + " "+vsuma);
+    }
+    
+    suma();
+    function resta(){
+        vresta = num1-num2;
+        alert("Restado da:" + " "+vresta);
+    }
+    resta();
+    function multi(){
+        vmulti = num1*num2;
+        alert("Multiplicado da:"+ " "+vmulti);
+    }
+    multi();
+    function div(){
+        vdiv = num1/num2;
+        alert("Dividido da:" +" "+ vdiv)
+
+    }
+    div();
+}
+calcular();
+
+
+        function retornar(){
+            location.href = "../index.html";
+        }
+    </script>
+</body>
+</html>

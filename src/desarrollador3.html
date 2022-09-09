@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Desarrollador 3</title>
+    <link rel="stylesheet" href="../css/button.css">
+    <meta charset="UTF-8">
+</head>
+
+<form>
+    <div ALIGN=center>
+        <h1>CoderGeeks</h1>
+        
+    </div>
+    
+    <h2> CodeGeeks- promedio</h2>
+        Ingrese el primer numero:
+        <input type="num_1" id="uno">
+        <br>
+        Ingrese el segundo numero:
+        <input type="num_2" id="dos">
+        <br>
+        Ingrese el tercer numero:
+        <input type="num_3" id="tres">
+        <br>
+        <input type="button" value="promedio" onClick="promedio()">
+    </form>
+
+    <script>
+        function promedio() {
+            let uno = document.getElementById('uno').value;
+            let dos = document.getElementById('dos').value;
+            let tres = document.getElementById('tres').value;
+            let prom= (parseFloat(uno)+parseFloat(dos))+parseFloat(tres)/3
+            alert("Este es el promedio :" +prom);        
+            }
+
+        function retornar() {
+            location.href = "../index.html";
+        }
+        
+    </script>
+
+<div class="button-return">
+    <button class="cta"  onclick="retornar()" type="button">
+      <span class="hover-underline-animation" > Return </span>
+      <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+          <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+      </svg>
+  </button>
+  </div>
+
+</html>

@@ -1,12 +1,36 @@
 function calcular(){
-    var a = document.f1.a.value;
-    var b = document.f1.b.value;
-    var d = document.f1.d.value;
-    var r1 = document.f1.g.value;
-    var r2 = document.f1.gg.value;
-    r1 = (parseFloat(a) * parseFloat(d) / 100) + (parseFloat(a) * parseFloat(b) / 100) + parseFloat(a);
-    r2 = parseFloat(a) * parseFloat(b) / 100;
-    document.f1.g.value = r1;
-    document.f1.gg.value = r2;
 
+
+    let a = document.getElementById("a").value;
+    let b = a.split(",");
+    let c = [];
+
+
+    if ( b.length > 10) {
+      alert("Solo se permiten 10 numeros");
+    } else {
+      for (let i = 0; i < b.length; i++) {
+        if (b[i] % 15 == 0) {
+          c.push(b[i]);
+        }
+      }
+      document.getElementById("g").value = c;
+
+
+      let d = [];
+
+    
+      for (let i = 0; i < b.length; i++) {
+        if (b[i] < 0) {
+          d.push(b[i]);
+        }
+      }
+      document.getElementById("gg").value = d;
+
+    }
+
+}
+
+function retornar(){
+    location.href = "../index.html";
 }
