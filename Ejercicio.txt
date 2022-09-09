@@ -8,18 +8,15 @@ es decir ejemplo jorge portella JPortella
 cada uno de los usuarios para esto cada desarrollador debe  hacer esta pagina con un script en js 
 
 -la primera pagina del desarrollador 1 debe solicitar dos numeros y realizar las cuatro operaciones 
-basicas (suma, resta, multi, division) esteban
+basicas (suma, resta, multi, division) (esteban)
 
-- desarrollador 2 en su pagina web debe solucionar la serie de fibonachi danny
+- desarrollador 2 en su pagina web debe solucionar la serie de fibonachi (danny)
 
 -el desarrollador 3 debe generar un script en su pagina que pida tres numeros positivos
-y retorne el promedio aritmetico  danna
+y retorne el promedio aritmetico  (danna)
 
-- el desarrollador 4 debe solicitar el lado de un cuadrado y retornar su perimetro david
+- el desarrollador 4 debe solicitar el lado de un cuadrado y retornar su perimetro (david)
 
 - el desarrollador 5 solicitara 10 valores por teclado y mostrara la cantidad de valores negativos ingresados y
-la cantidad de multiplos de 15 ingresados  cristian
+la cantidad de multiplos de 15 ingresados  (cristian)
 
--el desarrollador 6 debe solicitar los lados de un triangulo e indicar si el triangulo es equilatero isoseles o escaleno 
-
-PXFPC-KQNT7-4V2TK-KCPHH-XD436
